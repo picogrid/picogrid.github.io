@@ -62,7 +62,7 @@ a:hover {
 @media (min-width: 992px) {
   .buy-container {
     height:100%;
-    background-image: url("https://goldwatersystems.com/img/desert.jpg");
+    background-image: url("https://picogrid.io/img/desert.jpg");
     background-size: cover;
     background-position: cover;
   }
@@ -103,7 +103,7 @@ footer {padding: 24px 0 !important}
 #loadOverlay{display: none;}
 
 .home-hero {
-  background-image: url("https://goldwatersystems.com/img/thermal.jpg");
+  background-image: url("https://picogrid.io/img/thermal.jpg");
   background-size: cover;
   background-position: cover;
    position:relative;
