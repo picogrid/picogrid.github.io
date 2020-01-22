@@ -1,0 +1,489 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Goldwater Systems - Access any sensor, anywhere.</title>
+
+  <div id="loadOverlay" style="background-color:#333; position:absolute; top:0px; left:0px; width:100%; height:100%; z-index:2000;"></div>
+
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149344050-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-149344050-1');
+  </script>
+
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
+
+    ! function() {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void(window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+          t.factory = function(e) {
+            return function() {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function(e) {
+            t[e] = t.factory(e);
+          }), t.load = function(t) {
+            var e = 3e5,
+              n = Math.ceil(new Date() / e) * e,
+              o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('gbybdtfb4wab');
+  </script>
+  <!-- End of Async Drift Code -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "Organization",
+      "name": "Goldwater Systems",
+      "image": "https://www.goldwatersystems.com/img/favicon/favicon-310.png",
+      "telephone": "+1 (510) 775-0195",
+      "email": "info@goldwatersystems.com",
+      "description": "Goldwater offers real-time access to critical ground-sensors far beyond the reaches of existing power and connectivity infrastructure.",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Livermore",
+        "addressRegion": "CA"
+      },
+      "url": "https://www.goldwatersystems.com/"
+    }
+  </script>
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Goldwater offers real-time access to critical ground-sensors far beyond the reaches of existing power and connectivity infrastructure.">
+  <link href="/css/themify-icons.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
+  <link href="/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+
+  <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+  <link rel="icon" sizes="16x16 32x32 64x64" href="/img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon/favicon-192.png">
+  <link rel="icon" type="image/png" sizes="160x160" href="/img/favicon/favicon-160.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon/favicon-64.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16.png">
+  <link rel="apple-touch-icon" href="/img/favicon/favicon-57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/favicon-114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/favicon-72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/favicon-144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/favicon-60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/favicon-120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/favicon-76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/favicon-152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/favicon-180.png">
+  <meta name="msapplication-TileColor" content="#4C4C4C">
+  <meta name="msapplication-TileImage" content="/img/favicon/favicon-144.png">
+  <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
+
+</head>
+
+<body>
+
+  <div class="nav-container">
+    <nav>
+      <div class="nav-bar">
+        <div class="module left">
+          <a href="/">
+            <div class="vnu"><img class="logo logo-light" alt="Goldwater" src="/img/goldwater-logo-dark.png"></div>
+            <img class="logo logo-dark" alt="Goldwater" src="/img/goldwater-logo-dark.png">
+          </a>
+        </div>
+        <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+          <i class="ti-menu"></i>
+        </div>
+        <div class="module-group right">
+          <div class="module left">
+            <ul itemscope itemtype="http://www.schema.org/SiteNavigationElement" class="menu">
+              <!-- <li class="vpf">
+                <a href="/scout" target="_self">Scout AI Core </a>
+              </li>
+              <li class="vpf">
+                <a href="/pricing" target="_self">Pricing </a>
+              </li> -->
+              <!-- <li class="has-dropdown">
+                <a href="#">
+                  Sensors
+                </a>
+                <ul>
+                  <li>
+                    <a href="/sensors/audio" target="_self">
+                      Audio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sensors/flow" target="_self">
+                      Liquid Flow Rate
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sensors/radar" target="_self">
+                      Radar
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sensors/seismometer" target="_self">
+                      Seismic Waves
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sensors/imaging" target="_self">
+                      Visual & Thermal Imaging
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sensors/custom" target="_self">
+                      Custom Integration
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="has-dropdown">
+                <a href="#">
+                  Industries
+                </a>
+                <ul>
+                  <li>
+                    <a href="/industries/agriculture" target="_self">
+                      Agriculture
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/construction" target="_self">
+                      Construction
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/wildlife" target="_self">
+                      Park & Wildlife Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/forestry" target="_self">
+                      Forestry
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/defense" target="_self">
+                      Defense & Security
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/land-management" target="_self">
+                      Land Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/mining" target="_self">
+                      Mining
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/industries/oil-and-gas" target="_self">
+                      Oil & Gas
+                    </a>
+                  </li>
+                </ul>
+              </li> -->
+              <!-- <li class="vpf">
+                <a href="/blog" target="_self">Blog </a>
+              </li>
+              <li class="vpf">
+                <a href="/about" target="_self">About </a>
+              </li> -->
+              <li class="vpf">
+                <a href="/contact" target="_self">Contact </a>
+              </li>
+              <!-- <li class="vpf">
+                <a href="/buy" target="_self">Buy </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="main-container" style="height: calc(100vh - 55px) !important;">
+    <div class="buy-container">
+      <div class="right-content-container" style="height: calc(100vh - 55px);">
+
+        <form class="col-sm-12" action="https://h2k90z8zl6.execute-api.us-east-1.amazonaws.com/prod/charges" method="post" id="payment-form">
+
+          <h5 class="uppercase"><strong>Your Scout Core </strong></h5>
+
+          <div class="select-option">
+            <i class="ti-angle-down"></i>
+            <select id="sensor">
+              <option selected value="default-sensor">Sensor Type</option>
+              <option value="camera">Visual or thermal camera</option>
+              <option value="liquid">Liquid flow rate</option>
+              <option value="audio">Audio</option>
+              <option value="radar">Radar</option>
+              <option value="seismometer">Seismometer</option>
+              <option value="other">Other - We will be in touch</option>
+            </select>
+          </div>
+          <div class="select-option">
+            <i class="ti-angle-down"></i>
+            <select id="connectivity">
+              <option selected value="default-connectivity">Connectivity</option>
+              <option value="cellular">Cellular</option>
+              <option value="satellite">Satellite</option>
+            </select>
+          </div>
+          <div class="select-option">
+            <i class="ti-angle-down"></i>
+            <select id="plan">
+              <option selected value="default-plan">Service Plan</option>
+              <option value="basic">Basic</option>
+              <option value="pro">Pro</option>
+              <option value="enterprise">Enterprise</option>
+            </select>
+          </div>
+          <div class="input-with-label text-left">
+            <span>Quantity</span>
+            <input id="quantity" type="number" />
+          </div>
+          <p class="mb32">
+            Your Scout Core configuration details can be adjusted after the order is placed. We will be in touch to identify specific sensor or camera needs and to address cellular or satellite connectivity availability in your area.
+          </p>
+
+          <div class="text-left mb64">
+            <div>
+              <h5 class="mb0 float-left"><strong>Due Today</strong></h5>
+              <h5 class="mb0 float-right"><strong>$100</strong></h5>
+            </div>
+            <p style="clear: both;">Fully refundable deposit</p>
+          </div>
+
+          <div class="">
+            <h5 class="uppercase"><strong>Account Details</strong></h5>
+          </div>
+          <div class="input-with-label text-left">
+            <span for="name" data-tid="name_label">Name</span>
+            <input id="name" data-tid="name_placeholder" type="text" required="" autocomplete="name">
+          </div>
+          <div class="input-with-label text-left">
+            <span for="email" data-tid="email_label">Email</spam>
+              <input id="email" data-tid="email_placeholder" type="text" required="" autocomplete="email">
+          </div>
+          <div class="input-with-label text-left">
+            <span for="phone">Phone</span>
+            <input id="phone" type="text" required="" autocomplete="tel">
+          </div>
+          <div class="input-with-label text-left">
+            <span>Company Name</span>
+            <input id="company" type="text" placeholder="" />
+          </div>
+          <div class="input-with-label text-left mb64">
+            <span>Installation Address</span>
+            <input id="installation-address" type="text" required="" placeholder="" />
+          </div>
+
+          <div class="">
+            <h5 class="uppercase"><strong>Payment</strong></h5>
+          </div>
+          <div class="input-with-label text-left mb32">
+            <span for="card-element">Credit or debit card</span>
+            <div id="card-element">
+              <!-- A Stripe Element will be inserted here. -->
+            </div>
+            <!-- Used to display form errors. -->
+            <div id="card-errors" role="alert"></div>
+          </div>
+
+          <div class="mb16">
+            <p>
+              By placing this order you agree to allow Goldwater to save your credit card to pay for future services. You will have the opportunity to provide alternate payment information before any additional charges.
+            </p>
+            <div class="text-center center-block">
+              <h5 class="mb0"><strong>Due today - $100</strong></h5>
+              <p>Fully refundable</p>
+            </div>
+          </div>
+
+          <div class="mb16" id="payment-errors" role="alert"></div>
+          <button style="width:250px;" type="submit" id="payment-submit" class="purchase-button center-block mb48">Place Order</button>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/flexslider.min.js"></script>
+  <script src="js/parallax.js"></script>
+  <script src="js/scripts.js"></script>
+
+  <script>
+    // Create a Stripe client.
+    var stripe = Stripe('pk_live_lQzrwheW8qQsAd79CHvq7Faq00wTjAaDnH');
+
+    // Create an instance of Elements.
+    var elements = stripe.elements();
+
+    // Custom styling can be passed to options when creating an Element.
+    // (Note that this demo uses a wider set of styles than the guide below.)
+    var style = {
+      base: {
+        color: '#32325d',
+        fontFamily: '"Raleway", Helvetica, sans-serif',
+        fontSmoothing: 'antialiased',
+        fontSize: '16px',
+        '::placeholder': {
+          color: '#aab7c4'
+        }
+      },
+      invalid: {
+        color: '#fa755a',
+        iconColor: '#fa755a'
+      }
+    };
+
+    // Create an instance of the card Element.
+    var card = elements.create('card', {
+      style: style
+    });
+
+    // Add an instance of the card Element into the `card-element` <div>.
+    card.mount('#card-element');
+
+    // Handle real-time validation errors from the card Element.
+    card.addEventListener('change', function(event) {
+      var displayError = document.getElementById('card-errors');
+      if (event.error) {
+        displayError.textContent = event.error.message;
+      } else {
+        displayError.textContent = '';
+      }
+    });
+
+    // Handle form submission.
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      var name = form.querySelector('#name');
+      var email = form.querySelector('#email');
+      var company = form.querySelector('#company');
+      var phone = form.querySelector('#phone');
+      var installationAddress = form.querySelector('#installation-address');
+      var sensor = form.querySelector('#sensor');
+      var connectivity = form.querySelector('#connectivity');
+      var plan = form.querySelector('#plan');
+      var quantity = form.querySelector('#quantity');
+
+      additionalData = {
+        name: name ? name.value : undefined,
+        email: email ? email.value : undefined,
+        company: company ? company.value : undefined,
+        phone: phone ? phone.value : undefined,
+        installationAddress: installationAddress ? installationAddress.value : undefined,
+        sensor: sensor ? sensor.options[sensor.selectedIndex].value : undefined,
+        connectivity: connectivity ? connectivity.options[connectivity.selectedIndex].value : undefined,
+        plan: plan ? plan.options[plan.selectedIndex].value : undefined,
+        quantity: quantity ? quantity.value : undefined,
+      }
+
+      stripe.createToken(card, additionalData).then(function(result) {
+        if (result.error) {
+          // Inform the user if there was an error.
+          var errorElement = document.getElementById('card-errors');
+          errorElement.textContent = result.error.message;
+        } else {
+          // Send the token to your server.
+          document.getElementById("payment-submit").innerHTML = "Submitting...";
+          document.getElementById("payment-submit").diabled = true;
+
+          fetch('https://h2k90z8zl6.execute-api.us-east-1.amazonaws.com/prod/charges', {
+              method: 'POST',
+              body: JSON.stringify({
+                token: result.token,
+                metadata: {
+                  name: additionalData.name,
+                  email: additionalData.email,
+                  company: additionalData.company,
+                  phone: additionalData.phone,
+                  installationAddress: additionalData.installationAddress,
+                  sensor: additionalData.sensor,
+                  connectivity: additionalData.connectivity,
+                  plan: additionalData.plan,
+                  quantity: additionalData.quantity
+                },
+                charge: {
+                  amount: 10000,
+                  currency: 'usd'
+                }
+              }),
+              headers: {
+                'Content-Type': 'application/json',
+              },
+            })
+            .then(function(response) {
+              if (response.ok) {
+                // Report to the browser that the payment was successful, prompting
+                // it to close the browser payment interface.
+                window.location.replace("https://goldwatersystems.com/thanks");
+              } else {
+                // Report to the browser that the payment failed, prompting it to
+                // re-show the payment interface, or show an error message and close
+                // the payment interface.
+                document.getElementById("payment-submit").disabled = false;
+                document.getElementById("payment-errors").innerHTML = 'Payment failed. Please double check your payment information. If this problem persists, please use the <a href="/contact" target="_self">contact form</a>.'
+                document.getElementById("payment-submit").innerHTML = "Place Order";
+              }
+            })
+        }
+      });
+    });
+  </script>
+
+  <script type="text/javascript">
+    _linkedin_partner_id = "1547962";
+    window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
+    window._linkedin_data_partner_ids.push(_linkedin_partner_id);
+  </script>
+  <script type="text/javascript">
+    (function() {
+      var s = document.getElementsByTagName("script")[0];
+      var b = document.createElement("script");
+      b.type = "text/javascript";
+      b.async = true;
+      b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
+      s.parentNode.insertBefore(b, s);
+    })();
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none;" alt="" src="https://px.ads.linkedin.com/collect/?pid=1547962&fmt=gif" />
+  </noscript>
+</body>
+
+</html>

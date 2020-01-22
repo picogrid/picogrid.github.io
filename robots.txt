@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /scout
+Allow: /pricing
+Allow: /blog/*
+Allow: /about
+Allow: /contact
+Sitemap: https://www.goldwatersystems.com/sitemap.xml
