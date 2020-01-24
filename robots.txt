@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Allow: /scout
+Allow: /lander
 Allow: /pricing
 Allow: /blog/*
 Allow: /about
