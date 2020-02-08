@@ -5,4 +5,6 @@ Allow: /pricing
 Allow: /blog/*
 Allow: /about
 Allow: /contact
+Disallow: /industries/*
+Disallow: /sensors/*
 Sitemap: https://www.picogrid.io/sitemap.xml
