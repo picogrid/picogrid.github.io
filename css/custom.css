@@ -132,7 +132,7 @@ footer {padding: 24px 0 !important}
   }
 }
 
-input, .select-option {
+input, textarea, .select-option {
   border-radius: 4px !important;
   box-shadow: 0 1px 3px 0 #e6ebf1 !important;
   -webkit-transition: box-shadow 150ms ease !important;

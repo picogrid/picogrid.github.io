@@ -94,7 +94,7 @@
     <nav>
       <div class="nav-bar">
         <div class="module left">
-          <a href="/">
+          <a href="#" target="_self">
             <div class="vnu"><img class="logo logo-light" alt="Picogrid" src="/img/picogrid-logo-dark.png"></div>
             <img class="logo logo-dark" alt="Picogrid" src="/img/picogrid-logo-dark.png">
           </a>
@@ -221,42 +221,16 @@
         <form class="col-sm-12" action="https://h2k90z8zl6.execute-api.us-east-1.amazonaws.com/prod/charges" method="post" id="payment-form">
 
           <h5 class="uppercase"><strong>Your Deployment </strong></h5>
-
-          <div class="select-option">
-            <i class="ti-angle-down"></i>
-            <select id="sensor">
-              <option selected value="default-sensor">Sensor Type</option>
-              <option value="camera">Visual or thermal camera</option>
-              <option value="liquid">Liquid flow rate</option>
-              <option value="audio">Audio</option>
-              <option value="radar">Radar</option>
-              <option value="seismometer">Seismometer</option>
-              <option value="other">Other - We will be in touch</option>
-            </select>
-          </div>
-          <div class="select-option">
-            <i class="ti-angle-down"></i>
-            <select id="connectivity">
-              <option selected value="default-connectivity">Connectivity</option>
-              <option value="cellular">Cellular</option>
-              <option value="satellite">Satellite</option>
-            </select>
-          </div>
-          <div class="select-option">
-            <i class="ti-angle-down"></i>
-            <select id="plan">
-              <option selected value="default-plan">Service Plan</option>
-              <option value="basic">Basic</option>
-              <option value="pro">Pro</option>
-              <option value="enterprise">Enterprise</option>
-            </select>
-          </div>
           <div class="input-with-label text-left">
-            <span>Quantity</span>
+            <span>Lander Quantity</span>
             <input id="quantity" type="number" />
           </div>
+          <div class="input-with-label text-left">
+            <span>Additional information</span>
+            <textarea id="details" placeholder="Briefly describe anything we should know about your deployment" rows="4"></textarea>
+          </div>
           <p class="mb32">
-            Your Lander configuration details can be adjusted after the order is placed. We will be in touch to identify specific sensor or camera needs and to address cellular or satellite connectivity availability in your area.
+            Your deployment configuration details can be adjusted after the order is placed. We will be in touch to identify specific needs.
           </p>
 
           <div class="text-left mb64">
@@ -264,7 +238,7 @@
               <h5 class="mb0 float-left"><strong>Due Today</strong></h5>
               <h5 class="mb0 float-right"><strong>$100</strong></h5>
             </div>
-            <p style="clear: both;">Fully refundable deposit</p>
+            <p style="clear: both;">Fully refundable order fee</p>
           </div>
 
           <div class="">
@@ -272,23 +246,23 @@
           </div>
           <div class="input-with-label text-left">
             <span for="name" data-tid="name_label">Name</span>
-            <input id="name" data-tid="name_placeholder" type="text" required="" autocomplete="name">
+            <input id="name" data-tid="name_placeholder" placeholder="Name" type="text" required="" autocomplete="name">
           </div>
           <div class="input-with-label text-left">
             <span for="email" data-tid="email_label">Email</spam>
-              <input id="email" data-tid="email_placeholder" type="text" required="" autocomplete="email">
+            <input id="email" data-tid="email_placeholder" placeholder="name@company.com" type="text" required="" autocomplete="email">
           </div>
           <div class="input-with-label text-left">
             <span for="phone">Phone</span>
-            <input id="phone" type="text" required="" autocomplete="tel">
+            <input id="phone" type="text" required="" placeholder="1 (555) 555 8888" autocomplete="tel">
           </div>
           <div class="input-with-label text-left">
             <span>Company Name</span>
-            <input id="company" type="text" placeholder="" />
+            <input id="company" type="text" placeholder="Company" />
           </div>
           <div class="input-with-label text-left mb64">
-            <span>Installation Address</span>
-            <input id="installation-address" type="text" required="" placeholder="" />
+            <span>Installation Zip Code(s)</span>
+            <input id="installation-address" placeholder="10001, 11201" type="text" required="" placeholder="" />
           </div>
 
           <div class="">
@@ -305,7 +279,7 @@
 
           <div class="mb16">
             <p>
-              By placing this order you agree to allow Picogrid, Inc. to save your credit card to pay for future services. You will have the opportunity to provide alternate payment information before any additional charges.
+              By placing this order you agree to allow Picogrid, Inc. to save your card details to pay for future services. You will have the opportunity to provide alternate payment information before any additional charges.
             </p>
             <div class="text-center center-block">
               <h5 class="mb0"><strong>Due today - $100</strong></h5>
