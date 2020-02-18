@@ -60,7 +60,7 @@ a:hover {
   padding-bottom: 0 !important;
 }
 @media (min-width: 992px) {
-  .buy-container {
+  .deploy-container {
     height:100%;
     background-image: url("https://picogrid.io/img/picogrid-saltflat2.jpg");
     background-size: cover;
