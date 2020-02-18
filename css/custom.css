@@ -187,3 +187,9 @@ input:focus {
 .float-right {
   float: right;
 }
+
+.background-image-holder{
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: left !important;
+}
