@@ -193,3 +193,6 @@ input:focus {
   background-size: cover !important;
   background-position: left !important;
 }
+
+.email-button { color: #fff !important; border-color: #fff !important; background: none !important;}
+.email-button:hover { color: #1b1d36 !important; background: #fff !important; }
