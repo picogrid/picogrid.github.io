@@ -354,9 +354,7 @@
       var company = form.querySelector('#company');
       var phone = form.querySelector('#phone');
       var installationAddress = form.querySelector('#installation-address');
-      var sensor = form.querySelector('#sensor');
-      var connectivity = form.querySelector('#connectivity');
-      var plan = form.querySelector('#plan');
+      var details = form.querySelector('#details');
       var quantity = form.querySelector('#quantity');
 
       additionalData = {
@@ -365,9 +363,7 @@
         company: company ? company.value : undefined,
         phone: phone ? phone.value : undefined,
         installationAddress: installationAddress ? installationAddress.value : undefined,
-        sensor: sensor ? sensor.options[sensor.selectedIndex].value : undefined,
-        connectivity: connectivity ? connectivity.options[connectivity.selectedIndex].value : undefined,
-        plan: plan ? plan.options[plan.selectedIndex].value : undefined,
+        details: details ? details.value : undefined,
         quantity: quantity ? quantity.value : undefined,
       }
 
@@ -391,9 +387,7 @@
                   company: additionalData.company,
                   phone: additionalData.phone,
                   installationAddress: additionalData.installationAddress,
-                  sensor: additionalData.sensor,
-                  connectivity: additionalData.connectivity,
-                  plan: additionalData.plan,
+                  details: additionalData.details,
                   quantity: additionalData.quantity
                 },
                 charge: {
