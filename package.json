@@ -1,9 +1,9 @@
 {
-    "name": "pixel-pro-ui-kit",
-    "version": "5.0.0",
-    "description": "Pixel Pro - Premium Bootstrap 5 UI Kit created by Themesberg",
+    "name": "picogrid.io",
+    "version": "2.0.1",
+    "description": "Picogrid public website",
     "main": "gulpfile.js",
-    "author": "Themesberg",
+    "author": "Zane Mountcastle",
     "keywords": [
         "css",
         "sass",
@@ -14,11 +14,10 @@
         "accessible",
         "bootstrap 5"
     ],
-    "homepage": "https://themesberg.com/product/ui-kit/pixel-pro-premium-bootstrap-5-ui-kit",
+    "homepage": "https://picogrid.io",
     "bugs": {
-        "email": "zoltan@themesberg.com"
+        "email": "hello@picogrid.io"
     },
-    "license": "https://themesberg.com/licensing",
     "devDependencies": {
         "browser-sync": "2.26.7",
         "del": "4.1.1",
@@ -38,6 +37,11 @@
         "gulp-uglify": "3.0.2",
         "gulp-wait": "0.0.2",
         "merge-stream": "2.0.0"
+    },
+    "scripts": {
+      "start": "gulp",
+      "build": "gulp build:dist",
+      "deploy": "gulp build:dist && gulp deploy"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.11.2",
