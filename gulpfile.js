@@ -372,6 +372,12 @@ gulp.task('copy:dist:html:index', function () {
         .pipe(gulp.dest(paths.dist.base))
 });
 
+// Copy index
+gulp.task('copy:dist:cname', function () {
+    return gulp.src([paths.src.base + 'CNAME'])
+        .pipe(gulp.dest(paths.dist.base))
+});
+
 gulp.task('copy:dev:html:index', function () {
     return gulp.src([paths.src.base + '*.html'])
         .pipe(fileinclude({
@@ -407,7 +413,7 @@ gulp.task('copy:dev:vendor', function() {
 });
 
 gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:css', 'copy:dev:html', 'copy:dev:blog', 'copy:dev:whitePapers', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
-gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:blog', 'copy:dist:whitePapers', 'copy:dist:html:index', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:whitePapers', 'minify:html:index', 'copy:dist:vendor'));
+gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:blog', 'copy:dist:whitePapers', 'copy:dist:html:index', 'copy:dist:cname', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:whitePapers', 'minify:html:index', 'copy:dist:vendor'));
 
 /**
  * Push build to gh-pages
