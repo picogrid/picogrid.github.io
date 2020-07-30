@@ -27,6 +27,7 @@ var sass = require('gulp-sass');
 var wait = require('gulp-wait');
 var sourcemaps = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
+var deploy = require('gulp-gh-pages');
 
 // Define paths
 
@@ -77,14 +78,6 @@ const paths = {
         vendor: './.temp/vendor'
     }
 };
-
-/**
- * Push build to gh-pages
- */
-gulp.task('deploy', function () {
-  return gulp.src("./dist/**/*")
-    .pipe(deploy())
-});
 
 // Compile SCSS
 gulp.task('scss', function () {
@@ -415,6 +408,14 @@ gulp.task('copy:dev:vendor', function() {
 
 gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:css', 'copy:dev:html', 'copy:dev:blog', 'copy:dev:whitePapers', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
 gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:blog', 'copy:dist:whitePapers', 'copy:dist:html:index', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:whitePapers', 'minify:html:index', 'copy:dist:vendor'));
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 
 // Default
 gulp.task('default', gulp.series('serve'));
