@@ -1,0 +1,154 @@
+/*
+
+=========================================================
+* Pixel Pro Bootstrap 5 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-5-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700&display=swap');
+
+// Bootstrap mixins and functions
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/functions";
+
+// Change variables here
+@import "pixel/variables";
+
+// Bootstrap
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+// Vendor
+@import "pixel/vendor";
+
+// Pixel mixins & functions
+@import "pixel/mixins";
+@import "pixel/functions";
+
+// Utilities
+@import "pixel/reboot";
+@import "pixel/utilities";
+
+// Layout
+@import "pixel/layout";
+
+// Components
+@import "pixel/components";
+
+// write your custom styles here!
+
+.slideInUpA {
+  -webkit-animation-name: slideInUpA;
+  animation-name: slideInUpA;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUpA {
+  0% {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInUpA {
+  0% {
+    -webkit-transform: translateY(30%);
+    transform: translateY(30%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slideInUpB {
+  -webkit-animation-name: slideInUpB;
+  animation-name: slideInUpB;
+  -webkit-animation-duration: 2.1s;
+  animation-duration: 2.1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUpB {
+  0% {
+    -webkit-transform: translateY(35%);
+    transform: translateY(35%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInUpB {
+  0% {
+    -webkit-transform: translateY(35%);
+    transform: translateY(35%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.slideInUpC {
+  -webkit-animation-name: slideInUpC;
+  animation-name: slideInUpC;
+  -webkit-animation-duration: 2.4s;
+  animation-duration: 2.4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes slideInUpC {
+  0% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInUpC {
+  0% {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    opacity: 0;
+    visibility: visible;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+image-fit {
+  object-fit: fill;
+}

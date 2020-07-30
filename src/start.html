@@ -1,0 +1,81 @@
+<!--
+
+=========================================================
+* Pixel Pro Bootstrap 5 UI Kit
+=========================================================
+
+* Product Page: https://themesberg.com/product/ui-kits/pixel-pro-premium-bootstrap-5-ui-kit
+* Copyright 2019 Themesberg (https://www.themesberg.com)
+
+* Coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Contact us if you want to remove it.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  @@include('./_head.html', {
+  "path": "../..",
+  "title": "Get Started | Picogrid"
+  })
+</head>
+
+<body>
+  <main>
+
+    <!-- Section -->
+    <section class="min-vh-100 d-flex align-items-center section-image overlay-soft-dark bg-secondary">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 d-flex align-items-center justify-content-center">
+            <div class="signin-inner mt-3 mt-lg-0 bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
+              <div class="text-center text-md-center mb-4 mt-md-0">
+                <h1 class="mb-0 h3">Sign up for Picogrid</h1>
+              </div>
+              <form action="https://formspree.io/xnqgwawk" method="POST" class="mt-4">
+                <!-- Form -->
+                <div class="mb-4">
+                  <label for="exampleInputEmail6">First name</label>
+                  <input name="first-name" type="text" class="form-control" id="first-name" required>
+                </div>
+                <div class="mb-4">
+                  <label for="last-name">Last Name</label>
+                  <input name="last-name" type="text" class="form-control" id="last-name" required>
+                </div>
+                <div class="mb-4">
+                  <label for="company">Company</label>
+                  <input name="company" type="text" class="form-control" id="company" required>
+                </div>
+                <div class="mb-4">
+                  <label for="work-email">Work email</label>
+                  <input name="work-email" type="email" class="form-control" id="work-email" required>
+                </div>
+                <div class="mb-4">
+                  <label for="work-phone">Work phone</label>
+                  <input name="work-phone" type="tel" class="form-control" id="work-phone" required>
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">Continue</button>
+              </form>
+              <div class="d-block d-sm-flex justify-content-center align-items-center mt-4">
+                <span class="font-weight-normal">
+                  Have an account?
+                  <a href="/html/sign-in.html" class="font-weight-bold">Sign in</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  @@include('./_scripts.html', {
+  "path": "../.."
+  })
+</body>
+
+</html>

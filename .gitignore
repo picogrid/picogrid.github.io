@@ -1,4 +1,5 @@
-.DS_Store
-node_modules/*
-.cache
-yarn-error.log
+node_modules/
+html&css/
+.temp/
+css/
+*.zip
