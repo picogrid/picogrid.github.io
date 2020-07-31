@@ -28,6 +28,7 @@ var wait = require('gulp-wait');
 var sourcemaps = require('gulp-sourcemaps');
 var fileinclude = require('gulp-file-include');
 var deploy = require('gulp-gh-pages');
+var purgecss = require('gulp-purgecss');
 
 // Define paths
 
@@ -178,14 +179,28 @@ gulp.task('beautify:css', function () {
         .pipe(gulp.dest(paths.dev.css))
 });
 
-// Minify CSS
+// Minify and Purge unused CSS
 gulp.task('minify:css', function () {
     return gulp.src([
         paths.dist.css + '/pixel.css'
     ])
+    .pipe(purgecss({
+        content: ['src/**/*.html']
+    }))
     .pipe(cleanCss())
     .pipe(gulp.dest(paths.dist.css))
 });
+
+// Purge Vendor CSS
+gulp.task('purge:css', function () {
+    return gulp.src([
+        paths.dist.vendor + '/**/*.css'
+    ])
+    .pipe(purgecss({
+        content: ['src/**/*.html']
+    }))
+    .pipe(gulp.dest(paths.dist.vendor))
+})
 
 // Minify Html
 gulp.task('minify:html', function () {
@@ -413,7 +428,7 @@ gulp.task('copy:dev:vendor', function() {
 });
 
 gulp.task('build:dev', gulp.series('clean:dev', 'copy:dev:css', 'copy:dev:html', 'copy:dev:blog', 'copy:dev:whitePapers', 'copy:dev:html:index', 'copy:dev:assets', 'beautify:css', 'copy:dev:vendor'));
-gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:blog', 'copy:dist:whitePapers', 'copy:dist:html:index', 'copy:dist:cname', 'copy:dist:assets', 'minify:css', 'minify:html', 'minify:whitePapers', 'minify:html:index', 'copy:dist:vendor'));
+gulp.task('build:dist', gulp.series('clean:dist', 'copy:dist:css', 'copy:dist:html', 'copy:dist:blog', 'copy:dist:whitePapers', 'copy:dist:html:index', 'copy:dist:cname', 'copy:dist:assets', 'copy:dist:vendor', 'minify:css', 'purge:css', 'minify:html', 'minify:whitePapers', 'minify:html:index'));
 
 /**
  * Push build to gh-pages
