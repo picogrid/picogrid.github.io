@@ -8,19 +8,33 @@
 <meta name="keywords" content="remote monitoring, data platform, remote terminal unit, sensors, sensor fusion, Lander terminal, Orion platform, sensor agnostic, industrial IoT, remote industry, AI sensors" />
 <link rel="canonical" href="https://picogrid.io">
 
+@@if (context.description) {
+    <meta property="og:description" content="@@description">
+    <meta property="twitter:description" content="@@description">
+}
+@@if (!context.description) {
+    <meta property="og:description" content="Picogrid is an end-to-end ecosystem for monitoring the most remote corners of our planet, no matter how hard to reach.">
+    <meta property="twitter:description" content="Picogrid is an end-to-end ecosystem for monitoring the most remote corners of our planet, no matter how hard to reach.">
+}
+
+@@if (context.image) {
+    <meta property="og:image" content="@@image">
+    <meta property="twitter:image" content="@@image">
+} 
+@@if (!context.image) {
+    <meta property="og:image" content="@@path/assets/img/pages/desert-car-min.jpg">
+    <meta property="twitter:image" content="@@path/assets/img/pages/desert-car-min.jpg">
+}
+
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://picogrid.io">
 <meta property="og:title" content="@@title">
-<meta property="og:description" content="Picogrid is an end-to-end ecosystem for monitoring the most remote corners of our planet, no matter how hard to reach.">
-<meta property="og:image" content="@@path/assets/img/pages/desert-car-min.jpg">
 
 <!-- Twitter -->
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:url" content="https://picogrid.io">
 <meta property="twitter:title" content="@@title">
-<meta property="twitter:description" content="Picogrid is an end-to-end ecosystem for monitoring the most remote corners of our planet, no matter how hard to reach.">
-<meta property="twitter:image" content="https://picogrid.io">
 
 <!-- Favicon -->
 <link rel="apple-touch-icon" sizes="120x120" href="@@path/assets/img/favicon/apple-touch-icon.png">
