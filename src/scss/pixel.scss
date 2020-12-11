@@ -47,10 +47,12 @@
 // write your custom styles here!
 
 .slideInUpA {
+  will-change: transform, opacity;
   -webkit-animation-name: slideInUpA;
   animation-name: slideInUpA;
   -webkit-animation-duration: 1.5s;
   animation-duration: 1.5s;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
@@ -81,11 +83,13 @@
   }
 }
 .slideInUpB {
+  will-change: transform, opacity;
   -webkit-animation-name: slideInUpB;
   animation-name: slideInUpB;
   -webkit-animation-duration: 2.1s;
   animation-duration: 2.1s;
   -webkit-animation-fill-mode: both;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1.0);
   animation-fill-mode: both;
 }
 @-webkit-keyframes slideInUpB {
@@ -115,11 +119,13 @@
   }
 }
 .slideInUpC {
+  will-change: transform, opacity;
   -webkit-animation-name: slideInUpC;
   animation-name: slideInUpC;
   -webkit-animation-duration: 2.4s;
   animation-duration: 2.4s;
   -webkit-animation-fill-mode: both;
+  transition-timing-function: linear;
   animation-fill-mode: both;
 }
 @-webkit-keyframes slideInUpC {
